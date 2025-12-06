@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Safety Node – Real-Time System Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #222;
+            text-align: center;
+        }
+
+        header {
+            background: #1e1e1e;
+            color: white;
+            padding: 20px 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+            margin-bottom: 30px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .section {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            text-align: left;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        code {
+            background: #eee;
+            padding: 4px 6px;
+            border-radius: 4px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>Ride Safety Node – Real-Time System Demo</header>
+
+<div class="container">
+
+    <div class="section">
+        <h2>🎥 Demo Video</h2>
+        <p>Below is the official demonstration of the Ride Safety Node real-time system, including ISR timing, load monitoring, emergency stop behavior, and telemetry output.</p>
+
+        <div class="video-wrapper">
+            <iframe 
+                src="https://www.youtube.com/embed/z5URu_BGqvU?si=KcA-6kMua3FUFAcC" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📌 Project Overview</h2>
+        <p>
+            This project demonstrates a proof-of-concept real-time embedded system built on the ESP32 running FreeRTOS.
+            The system simulates a <strong>theme-park roller coaster safety node</strong> with:
+        </p>
+        <ul>
+            <li>Real-time load sensor monitoring (Hard/Firm RT)</li>
+            <li>Emergency Stop ISR + latency-critical brake response</li>
+            <li>Alert queue + safety LED logic</li>
+            <li>Telemetry logger with variable execution time</li>
+            <li>Heartbeat LED for deterministic operation</li>
+        </ul>
+
+        <p>
+            Full Wokwi Simulation link:  
+            <a href="https://github.com/iwrotehaikus/Application6_JC2025.git" target="_blank">Open Simulation</a>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>📄 Source Code</h2>
+        <p>
+            Full firmware available on GitHub: <br>
+            <a href="https://github.com/iwrotehaikus/Application6_JC2025.git" target="_blank">
+                github.com/YOUR_USERNAME/YOUR_REPO
+            </a>
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 John Crawford – Real-Time Systems Project • University of Central Florida
+</footer>
+
+</body>
+</html>
